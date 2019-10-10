@@ -31,6 +31,7 @@ namespace SayıTahminOyunu
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            label10.Visible = false;
         }
         void kaydet()
         {
@@ -123,6 +124,8 @@ namespace SayıTahminOyunu
                     timer2.Stop();
                     kaydet();
                     MessageBox.Show("KAZANDINIZ PUANINIZ: "+labelGeriSayim.Text);
+                    label10.Visible = true;
+                   
                     oku();
                     groupBox2.Visible = false;
                     sayac = 100;
@@ -158,6 +161,7 @@ namespace SayıTahminOyunu
                     timer2.Stop();
                     kaydet();
                     MessageBox.Show("KAZANDINIZ PUANINIZ: " + labelGeriSayim.Text);
+                    label10.Visible = true;
                     oku();
                     groupBox2.Visible = false;
                     sayac = 100;
@@ -220,6 +224,7 @@ namespace SayıTahminOyunu
                     timer2.Stop();
                     kaydet();
                     MessageBox.Show("KAZANDINIZ PUANINIZ: "+labelGeriSayim.Text);
+                    label10.Visible = true;
                     oku();
                     groupBox2.Visible = false;
                     sayac = 100;
@@ -292,6 +297,7 @@ namespace SayıTahminOyunu
                     timer2.Stop();
                     kaydet();
                     MessageBox.Show("KAZANDINIZ PUANINIZ: " + labelGeriSayim.Text);
+                    label10.Visible = true;
                     oku();
                     groupBox2.Visible = false;
                     sayac = 100;
@@ -376,6 +382,7 @@ namespace SayıTahminOyunu
                     timer2.Stop();
                     kaydet();
                     MessageBox.Show("KAZANDINIZ PUANINIZ: " + labelGeriSayim.Text);
+                    label10.Visible = true;
                     oku();
                     groupBox2.Visible = false;
                     sayac = 100;
@@ -469,6 +476,7 @@ namespace SayıTahminOyunu
                     timer2.Stop();
                     kaydet();
                     MessageBox.Show("KAZANDINIZ PUANINIZ: " + labelGeriSayim.Text);
+                    label10.Visible = true;
                     oku();
                     groupBox2.Visible = false;
                     sayac = 100;
@@ -569,6 +577,7 @@ namespace SayıTahminOyunu
                     timer2.Stop();
                     kaydet();
                     MessageBox.Show("KAZANDINIZ PUANINIZ: " + labelGeriSayim.Text);
+                    label10.Visible = true;
                     oku();
                     groupBox2.Visible = false;
                     sayac = 100;
@@ -678,6 +687,7 @@ namespace SayıTahminOyunu
                     timer2.Stop();
                     kaydet();
                     MessageBox.Show("KAZANDINIZ PUANINIZ: " + labelGeriSayim.Text);
+                    label10.Visible = true;
                     oku();
                     groupBox2.Visible = false;
                     sayac = 100;
@@ -798,6 +808,7 @@ namespace SayıTahminOyunu
                     timer2.Stop();
                     kaydet();
                     MessageBox.Show("KAZANDINIZ PUANINIZ: " + labelGeriSayim.Text);
+                    label10.Visible = true;
                     oku();
                     groupBox2.Visible = false;
                     sayac = 100;
@@ -832,6 +843,7 @@ namespace SayıTahminOyunu
 
         private void BtnSayiUret_Click(object sender, EventArgs e)
         {
+            label10.Visible = false;
             listBox1.Items.Clear();
             if (textBoxUzunluk.Text == "")
             {

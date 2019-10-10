@@ -71,9 +71,11 @@
             this.label16 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -357,10 +359,12 @@
             // 
             // label10
             // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(726, 294);
+            this.label10.Font = new System.Drawing.Font("MS Reference Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Location = new System.Drawing.Point(76, 62);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 17);
+            this.label10.Size = new System.Drawing.Size(0, 35);
             this.label10.TabIndex = 8;
             // 
             // timer1
@@ -401,7 +405,7 @@
             this.textBox10.Name = "textBox10";
             this.textBox10.ReadOnly = true;
             this.textBox10.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox10.Size = new System.Drawing.Size(233, 275);
+            this.textBox10.Size = new System.Drawing.Size(233, 204);
             this.textBox10.TabIndex = 10;
             // 
             // label11
@@ -422,7 +426,7 @@
             this.label12.ForeColor = System.Drawing.Color.Red;
             this.label12.Location = new System.Drawing.Point(327, 238);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(54, 46);
+            this.label12.Size = new System.Drawing.Size(54, 45);
             this.label12.TabIndex = 12;
             this.label12.Text = "15";
             // 
@@ -481,6 +485,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightSalmon;
+            this.panel2.Controls.Add(this.label18);
+            this.panel2.Controls.Add(this.label10);
             this.panel2.Location = new System.Drawing.Point(486, 17);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(196, 168);
@@ -489,19 +495,30 @@
             // label17
             // 
             this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label17.Location = new System.Drawing.Point(36, 336);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(501, 17);
+            this.label17.Size = new System.Drawing.Size(768, 20);
             this.label17.TabIndex = 14;
-            this.label17.Text = "NOT:  Tekrarsız sayı seçildiği zaman bilgisayarın hızına göre kasmalar olabilir.." +
-    "";
+            this.label17.Text = "NOT:  Rakamlar tekrarlı olamaz seçildiği zaman bilgisayarın hızına göre kasmalar " +
+    "olabilir..";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label18.Location = new System.Drawing.Point(3, 9);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(161, 24);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "ÜRETİLEN SAYI";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(970, 365);
+            this.ClientSize = new System.Drawing.Size(970, 392);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -515,7 +532,6 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.labelGeriSayim);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.listBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -526,6 +542,8 @@
             this.panel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -574,6 +592,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
     }
 }
 
